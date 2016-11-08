@@ -3,8 +3,9 @@ use_frameworks!
 target 'dribbble' do
     pod 'RxSwift',    '~> 3.0'
     pod 'RxCocoa',    '~> 3.0'
-    pod 'Moya', '8.0.0-beta.2'
+    pod 'Moya', '8.0.0-beta.4'
     pod 'Moya/RxSwift'
+    pod 'R.swift'
 end
 
 post_install do |installer|
