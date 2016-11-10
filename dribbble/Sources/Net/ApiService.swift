@@ -5,6 +5,7 @@
 
 import Foundation
 import Moya
+import Alamofire
 
 enum ApiService {
 
@@ -19,32 +20,33 @@ enum ApiService {
 }
 
 extension ApiService: TargetType {
-    var baseURL: URL {
+    public var method: Moya.Method {
+        return .get
+    }
+
+    public var baseURL: URL {
         return URL(string: "https://api.dribbble.com/v1/")!
     }
 
-    var method: String {
-        return .GET
+
+    public var path: String {
+        return "shots"
     }
 
-    var path: String {
-        return ""
-    }
-
-    var parameters: [String:Any]? {
+    public var parameters: [String: Any]? {
         switch self {
-            case .getShots(page, sort):
-        return ["page": page, "per_page": ApiService.PageNumber, "sort": sort]
+        case let .getShots(page, sort):
+            return ["page": page, "sort": sort]
         default:
             return nil
         }
     }
 
-    var sampleData: Data {
-        return [:]
+    public var sampleData: Data {
+        return "{}".data(using: String.Encoding.utf8)!
     }
 
-    var task: Task {
+    public var task: Task {
         return .request
     }
 

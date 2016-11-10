@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.0.1)
+  - Kingfisher (3.2.0)
   - Moya (8.0.0-beta.4):
     - Moya/Core (= 8.0.0-beta.4)
   - Moya/Core (8.0.0-beta.4):
@@ -8,30 +9,40 @@ PODS:
   - Moya/RxSwift (8.0.0-beta.4):
     - Moya/Core
     - RxSwift (~> 3.0)
+  - ObjectMapper (2.2.1)
   - R.swift (3.1.0):
     - R.swift.Library (~> 3.0.2)
   - R.swift.Library (3.0.2)
   - Result (3.0.0)
   - RxCocoa (3.0.0):
     - RxSwift (~> 3.0)
+  - RxDataSources (1.0.0):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
   - RxSwift (3.0.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - Moya (= 8.0.0-beta.4)
   - Moya/RxSwift
+  - ObjectMapper (~> 2.2)
   - R.swift
   - RxCocoa (~> 3.0)
+  - RxDataSources (~> 1.0)
   - RxSwift (~> 3.0)
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Kingfisher: 50407d1d5dbc34965009d425a286342ff36a84ea
   Moya: bad6f72ec40661f09a8cd85ab470226d2795a485
+  ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
   R.swift: 14400e5784224d1e4e59a8fc5549198c7e8fe360
   R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
   Result: 1b3e431f37cbcd3ad89c6aa9ab0ae55515fae3b6
   RxCocoa: 0a2f3ae381cf16f4021a4cee7a4420f83058a965
+  RxDataSources: 824693e84d00781d0a5e5cedc1ff95ce9250aacd
   RxSwift: a930cd662f5b4a7ca9dc3518585dba91dadf497c
 
-PODFILE CHECKSUM: 7dfa1e53ed7599cb3bc24e0afd88997bcc0aa043
+PODFILE CHECKSUM: 2e7b9ed9235a215dbef187737044f1a5bcf72543
 
 COCOAPODS: 1.2.0.beta.1
