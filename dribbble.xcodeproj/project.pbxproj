@@ -20,6 +20,8 @@
 		95ED03811DD4C63600486D87 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ED03801DD4C63600486D87 /* Shot.swift */; };
 		95ED03841DD4C65800486D87 /* NetLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ED03821DD4C65800486D87 /* NetLogger.swift */; };
 		95ED03851DD4C65800486D87 /* Observable+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ED03831DD4C65800486D87 /* Observable+Mapper.swift */; };
+		95ED03881DD4CB5D00486D87 /* ShotViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ED03871DD4CB5D00486D87 /* ShotViewCell.swift */; };
+		95ED038A1DD4CC4600486D87 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ED03891DD4CC4600486D87 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		95ED03801DD4C63600486D87 /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		95ED03821DD4C65800486D87 /* NetLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetLogger.swift; sourceTree = "<group>"; };
 		95ED03831DD4C65800486D87 /* Observable+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Mapper.swift"; sourceTree = "<group>"; };
+		95ED03871DD4CB5D00486D87 /* ShotViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotViewCell.swift; sourceTree = "<group>"; };
+		95ED03891DD4CC4600486D87 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		99AFD7DFCA9E040316E9D011 /* Pods_dribbble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dribbble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5666C071751521EE8739880 /* Pods-dribbble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dribbble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dribbble/Pods-dribbble.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +119,7 @@
 		95ED03711DD4C49E00486D87 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				95ED03861DD4CB3700486D87 /* Views */,
 				95ED037F1DD4C63600486D87 /* Models */,
 				95ED03721DD4C49E00486D87 /* Controllers */,
 				95ED03741DD4C49E00486D87 /* Net */,
@@ -126,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				95ED03731DD4C49E00486D87 /* ViewController.swift */,
+				95ED03891DD4CC4600486D87 /* BaseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,6 +153,14 @@
 				95ED03801DD4C63600486D87 /* Shot.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		95ED03861DD4CB3700486D87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95ED03871DD4CB5D00486D87 /* ShotViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +307,8 @@
 				95ED037C1DD4C4BA00486D87 /* R.generated.swift in Sources */,
 				95ED03811DD4C63600486D87 /* Shot.swift in Sources */,
 				95ED03791DD4C49E00486D87 /* ApiService.swift in Sources */,
+				95ED038A1DD4CC4600486D87 /* BaseViewController.swift in Sources */,
+				95ED03881DD4CB5D00486D87 /* ShotViewCell.swift in Sources */,
 				95ED037A1DD4C49E00486D87 /* MoyaInstance.swift in Sources */,
 				95ED03841DD4C65800486D87 /* NetLogger.swift in Sources */,
 				95ED03851DD4C65800486D87 /* Observable+Mapper.swift in Sources */,

@@ -20,6 +20,7 @@ PODS:
     - RxCocoa (~> 3.0)
     - RxSwift (~> 3.0)
   - RxSwift (3.0.0)
+  - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - Kingfisher
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - RxCocoa (~> 3.0)
   - RxDataSources (~> 1.0)
   - RxSwift (~> 3.0)
+  - SnapKit (~> 3.0.2)
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
@@ -42,7 +44,8 @@ SPEC CHECKSUMS:
   RxCocoa: 0a2f3ae381cf16f4021a4cee7a4420f83058a965
   RxDataSources: 824693e84d00781d0a5e5cedc1ff95ce9250aacd
   RxSwift: a930cd662f5b4a7ca9dc3518585dba91dadf497c
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: 2e7b9ed9235a215dbef187737044f1a5bcf72543
+PODFILE CHECKSUM: 4b8791e8920b8c7246763855ae52776358d005db
 
 COCOAPODS: 1.2.0.beta.1

@@ -10,6 +10,7 @@ target 'dribbble' do
     pod 'ObjectMapper', '~> 2.2'
     pod 'R.swift'
     pod 'Kingfisher'
+    pod 'SnapKit', '~> 3.0.2'
 end
 
 post_install do |installer|
