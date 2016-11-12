@@ -13,4 +13,15 @@ class BaseViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
+    private var didSetupConstraints = false
+    
+    override func updateViewConstraints() {
+        if !self.didSetupConstraints {
+            self.setupConstraints()
+            self.didSetupConstraints = true
+        }
+        super.updateViewConstraints()
+    }
+    
+    func setupConstraints(){}
 }
