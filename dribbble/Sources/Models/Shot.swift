@@ -11,6 +11,7 @@ class Shot: Mappable {
     var id: Int64!
     var title: String!
     var description: String!
+    var image: Image!
     var viewsCount: Int!
     var likesCount: Int!
     var commentsCount: Int!
@@ -28,6 +29,7 @@ class Shot: Mappable {
         self.id <- map["id"]
         self.title <- map["title"]
         self.description <- map["description"]
+        self.image <- map["images"]
         self.viewsCount <- map["viewsCount"]
         self.likesCount <- map["likesCount"]
         self.commentsCount <- map["commentsCount"]

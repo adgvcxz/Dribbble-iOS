@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8FCD218B24D006E76F5C0A1A /* Pods_dribbble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AFD7DFCA9E040316E9D011 /* Pods_dribbble.framework */; };
+		957C41621DD8B6CF0075C45B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C41611DD8B6CF0075C45B /* Image.swift */; };
+		957C41641DD8BC580075C45B /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C41631DD8BC580075C45B /* BaseTableViewCell.swift */; };
 		95B24BBE1DD08C14000F5AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B24BBD1DD08C14000F5AB5 /* AppDelegate.swift */; };
 		95B24BC31DD08C14000F5AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B24BC11DD08C14000F5AB5 /* Main.storyboard */; };
 		95B24BC81DD08C14000F5AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B24BC61DD08C14000F5AB5 /* LaunchScreen.storyboard */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		6601205C3CE846B8C7F02DA3 /* Pods-dribbble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dribbble.release.xcconfig"; path = "Pods/Target Support Files/Pods-dribbble/Pods-dribbble.release.xcconfig"; sourceTree = "<group>"; };
+		957C41611DD8B6CF0075C45B /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		957C41631DD8BC580075C45B /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		95B24BBA1DD08C14000F5AB5 /* dribbble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dribbble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B24BBD1DD08C14000F5AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95B24BC21DD08C14000F5AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				95ED03801DD4C63600486D87 /* Shot.swift */,
+				957C41611DD8B6CF0075C45B /* Image.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				95ED03871DD4CB5D00486D87 /* ShotViewCell.swift */,
+				957C41631DD8BC580075C45B /* BaseTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -336,8 +342,10 @@
 				95ED038E1DD6FF1B00486D87 /* NSObject+Dribbble.swift in Sources */,
 				95ED03781DD4C49E00486D87 /* ShouListViewController.swift in Sources */,
 				95B24BBE1DD08C14000F5AB5 /* AppDelegate.swift in Sources */,
+				957C41641DD8BC580075C45B /* BaseTableViewCell.swift in Sources */,
 				95ED037C1DD4C4BA00486D87 /* R.generated.swift in Sources */,
 				95ED03811DD4C63600486D87 /* Shot.swift in Sources */,
+				957C41621DD8B6CF0075C45B /* Image.swift in Sources */,
 				95ED03791DD4C49E00486D87 /* ApiService.swift in Sources */,
 				95ED038A1DD4CC4600486D87 /* BaseViewController.swift in Sources */,
 				95ED03881DD4CB5D00486D87 /* ShotViewCell.swift in Sources */,

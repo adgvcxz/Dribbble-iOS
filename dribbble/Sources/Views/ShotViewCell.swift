@@ -7,19 +7,27 @@
 //
 
 import UIKit
+import SnapKit
+import Kingfisher
 
-class ShotViewCell: UITableViewCell {
+class ShotViewCell: BaseTableViewCell {
     
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var shotImageView = UIImageView()
+    
+    override func initialize() {
+        self.contentView.addSubview(shotImageView)
+        shotImageView.contentMode = .scaleAspectFill
+        shotImageView.layer.masksToBounds = true
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        shotImageView.snp.makeConstraints { (make) in
+            make.edges.equalTo(0)
+        }
     }
-
+    
+    func update(shot: Shot) {
+        shotImageView.kf.setImage(with: URL(string: shot.image.hidpi))
+    }
 }

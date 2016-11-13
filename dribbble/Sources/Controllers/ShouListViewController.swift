@@ -35,14 +35,16 @@ class ShotListViewController: BaseViewController {
     
     func configure(viewModel: ShotListViewModel) {
         self.dataSource.configureCell = {_, tableView, indexPath, viewModel in
-            let cell = tableView.dequeueReusableCell(withIdentifier: ShotViewCell.identifier)
-            cell?.textLabel?.text = viewModel.title
-            return cell!
+            let cell = tableView.dequeueReusableCell(withIdentifier: ShotViewCell.identifier, for: indexPath) as! ShotViewCell
+            cell.update(shot: viewModel)
+            return cell
         }
         self.tableView.rx.itemSelected
             .bindTo(viewModel.itemDidSelect)
             .addDisposableTo(self.disposeBag)
-        viewModel.sections.drive(self.tableView.rx.items(dataSource: self.dataSource)).addDisposableTo(self.disposeBag)
+        viewModel.sections
+            .drive(self.tableView.rx.items(dataSource: self.dataSource))
+            .addDisposableTo(self.disposeBag)
     }
 }
 

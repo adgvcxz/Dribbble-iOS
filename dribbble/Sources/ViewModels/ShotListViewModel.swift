@@ -25,12 +25,13 @@ struct ShotListViewModel: ShotListViewModelType {
     let itemDidSelect = PublishSubject<IndexPath>()
     
     let sections: Driver<[ShotListSection]>
+    var shots: Variable<[Shot]>
     
-    
-    private let disposeBag = DisposeBag()
     
     init(disposeBag: DisposeBag) {
-        self.sections = MoyaInstance.sharedInstance.getShots(page: 0, sort: "").mapToModelArr(Shot.self)
+        let shots = Variable<[Shot]>([])
+        self.shots = shots
+        self.sections = self.shots.asObservable()
             .map{ (shots) -> [ShotListSection] in
                 return [SectionModel(model: Void(), items: shots)]
             }.asDriver(onErrorJustReturn: [])
@@ -38,8 +39,12 @@ struct ShotListViewModel: ShotListViewModelType {
         self.itemDidSelect.map { (indexPath) -> Int in
             return indexPath.row
         }.asDriver(onErrorDriveWith: .empty()).drive(onNext: { (index) in
-            print(index)
+            print(shots.value[index].image.hidpi)
+        }).addDisposableTo(disposeBag)
+        
+        MoyaInstance.sharedInstance.getShots(page: 0, sort: "").mapToModelArr(Shot.self)
+        .subscribe(onNext: { (items) in
+            shots.value += items
         }).addDisposableTo(disposeBag)
     }
-    
 }
